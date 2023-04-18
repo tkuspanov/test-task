@@ -13,5 +13,6 @@ services:
    volumes:
      - data:/data
    command: minio server ~/minio --console-address :9090
+   restart: unless-stopped
 volumes:
     data:
